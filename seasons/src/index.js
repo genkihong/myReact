@@ -6,11 +6,11 @@ import Spinner from './Spinner';
 
 class App extends React.Component {
   /* Initializing state through constructors */
-  // constructor(props) {
-  //   super(props);
-  //   this.state = { lat: null, errorMessage: ''};    
-  // }  
-  state = { lat: null, errorMessage: '' };
+  constructor(props) {
+    super(props);
+    this.state = { lat: null, errorMessage: ''};    
+  }  
+  // state = { lat: null, errorMessage: '' };
 
   // 處理非同步行為
   componentDidMount() {
@@ -40,6 +40,5 @@ class App extends React.Component {
     );
   }
 }
-
 
 ReactDOM.render(<App />, document.getElementById('root'));

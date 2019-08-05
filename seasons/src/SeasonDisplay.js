@@ -32,7 +32,7 @@ const seasonConfig = {
   }
 };
 
-// 判斷 2~9 月，北半球和南半球為夏天或冬天
+// 3 ~ 8 月，北半球是夏天，南半球是冬天
 const getSeason = (lat, month) => {
   console.log('2', lat, month);
   if (month > 2 && month < 9) {
